@@ -19,11 +19,12 @@
 }
 
 @keyframes hero {
-0%   { border:1px dashed red; left:20px; top:20px; }
-29%  { left:500px; top:20px; transform: none}
-41%  { left:500px; top:200px;transform: none}
-44%  { left:270px; top:200px; transform: rotate(45deg)}
-56%  { border:1px dashed red;left:270px; top:200px; transform: rotate(45deg)}
-76%  { border:1px dashed blue; left:20px; top:200px; transform: none}
-100% { left:500px; top:500px; transition-property: border-radius;}
+    0%   { left:20px; top:20px;border:1px dashed red; }
+    29%  { left:500px; top:20px; transform: none;}
+    41%  { left:500px; top:200px; transform: none;}
+    44%  { left:270px; top:200px; transform: rotate(45deg);}
+    56%  { left:270px; top:200px; border:1px dashed red;  transform: rotate(45deg);}
+    76%  {  left:20px; top:200px;border:1px dashed #0900BD; border-radius:0%; background: transparent; transform: none; }
+    100% { left:480px; top:480px; border-radius:50%; background: radial-gradient(#e66465, #9198e5); transform: scale(2);}
+
 }
