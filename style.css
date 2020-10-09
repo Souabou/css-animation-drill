@@ -1,0 +1,29 @@
+
+#stage {
+    width: 38rem;
+    height: 38rem;
+    position: relative;
+    display: block;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+
+#hero {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    left: 20px;
+    top: 20px;
+    animation-name: hero;
+    animation-duration: 17s;
+}
+
+@keyframes hero {
+0%   { border:1px dashed red; left:20px; top:20px; }
+29%  { left:500px; top:20px; transform: none}
+41%  { left:500px; top:200px;transform: none}
+44%  { left:270px; top:200px; transform: rotate(45deg)}
+56%  { border:1px dashed red;left:270px; top:200px; transform: rotate(45deg)}
+76%  { border:1px dashed blue; left:20px; top:200px; transform: none}
+100% { left:500px; top:500px; transition-property: border-radius;}
+}
